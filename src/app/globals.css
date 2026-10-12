@@ -1,0 +1,45 @@
+@import "tailwindcss";
+
+/* Theme A · "Medimax logo theme" */
+@theme inline {
+  --color-ink: #2f3540;
+  --color-body: #4a4f57;
+  --color-mist: #f4f7fb;
+  --color-line: #e3e8ef;
+  --color-blue: #0a62ae;
+  --color-blue-dark: #084a84;
+  --color-blue-tint: #eaf2fb;
+  --color-teal: #0b7d6c;
+  --color-teal-tint: #e7f7f3;
+  --color-magenta: #c21d69;
+  --color-magenta-dark: #a3175a;
+  --color-magenta-tint: #fbe9f1;
+  --color-orange: #b5501a;
+  --color-orange-tint: #fef0e6;
+  --color-alert: #b3123f;
+  --font-sans: "Nunito", system-ui, sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background: #ffffff;
+  color: var(--color-ink);
+  font-family: var(--font-sans);
+}
+
+@utility wrap {
+  @apply mx-auto w-full max-w-[1200px] px-6;
+}
+@utility eyebrow {
+  @apply text-[13px] font-extrabold uppercase tracking-[.14em];
+}
+@utility logo-stripe {
+  height: 6px;
+  background: linear-gradient(90deg, #0a62ae, #0b8ed6, #10b19a, #cf1f70, #f57421, #ef4a32);
+}
+@utility pill {
+  @apply inline-flex items-center justify-center gap-2 rounded-full px-6 py-3.5 font-extrabold no-underline transition-colors;
+}
