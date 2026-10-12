@@ -25,7 +25,7 @@ export function DoctorCard({
         <img
           src={doctor.photo}
           alt={doctor.name}
-          className="h-72 w-full object-cover object-top"
+          className="h-72 w-full object-cover object-center"
         />
       ) : (
         <div
